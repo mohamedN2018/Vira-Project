@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2bdcf9bf-1396-4b74-880a-129f948f992a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ViRa/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/Scripts/gdjango-admin.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/Scripts/geasy_install-3.9.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/Scripts/geasy_install.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/Scripts/pip3.10.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/about/migrations/0003_imagerestaurants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/about/migrations/0004_imagerestaurants_titleimg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/about/migrations/0005_alter_about_aodescription_1_ar_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/about/templates/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/about/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/about_all/migrations/0003_alter_about_section_asdescription_1_ar_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/about_all/migrations/0004_alter_about_section_usdescription_ar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/About/photo_15_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/About/photo_36_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/About/photo_7_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/About/photo_8_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/Owner/photo_1_2023-11-16_14-10-57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/Owner/photo_2023-11-18_03-41-27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/Owner/photo_2023-11-18_03-41-30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/Owner/photo_2023-11-18_03-41-30_47Y8H23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/Owner/photo_2023-11-18_04-51-13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/Owner/photo_2023-11-18_04-52-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/Team/photo_1_2023-11-16_14-10-57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/imageRestaurants/photo_11_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/imageRestaurants/photo_15_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/imageRestaurants/photo_46_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ExternalDesignDetail/photo_13_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ExternalDesignDetail/photo_2023-11-18_04-13-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ExternalDesignDetail/photo_2023-11-18_04-13-18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ExternalDesignDetail/photo_2023-11-18_04-29-41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ExternalDesignDetail/photo_2023-11-18_04-29-43.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ExternalDesignDetail/photo_28_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ExternalDesignDetail/photo_35_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ExternalDesignDetail/photo_45_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/External_Design/Capture.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Interior_Design/images.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Interior_DesignDetail/photo_2023-11-18_04-04-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Interior_DesignDetail/photo_2023-11-18_04-04-10_vymtXuW.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Interior_DesignDetail/photo_2023-11-18_04-10-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Interior_DesignDetail/photo_2023-11-18_04-10-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Interior_DesignDetail/photo_2023-11-18_04-10-19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/LandScapeDetail/Screenshot_46.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/LandScapeDetail/Screenshot_46_HV4SEJR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/LandScapeDetail/Screenshot_98.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/LandScapeDetail/Screenshot_98_6xcUo41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/LandScapeDetail/photo_2023-11-18_03-41-27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/LandScapeDetail/photo_2023-11-18_03-41-27_3eyITXb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/LandScapeDetail/photo_2023-11-18_03-41-30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/LandScapeDetail/photo_2023-11-18_03-41-30_Guz3Nba.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/LandScapeDetail/photo_2023-11-18_03-41-30_a8dIoqt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/LandScapeDetail/photo_2023-11-18_03-41-30_eyllbqT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/LandScapeDetail/photo_2023-11-18_06-01-43.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_10_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_10_2023-11-15_19-50-53_fOuRqt2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_14_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_15_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_16_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_2023-11-18_13-10-15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_2023-11-18_13-10-15_Pmg8mPq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_2023-11-18_13-10-18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_2023-11-18_13-10-18_uVA019q.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_2023-11-18_13-10-20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_2023-11-18_13-10-20_kEntS4Q.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_20_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_21_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_21_2023-11-15_19-50-53_TnPKHYN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_21_2023-11-15_19-50-53_lPnAYot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_22_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_23_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_23_2023-11-15_19-50-53_CD5u4k6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_23_2023-11-15_19-50-53_aCJrUof.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_24_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_24_2023-11-15_19-50-53_aV4U74n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_24_2023-11-15_19-50-53_yBmOELx.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_26_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_27_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_28_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_29_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_29_2023-11-15_19-50-53_kcIkxfy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_30_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_31_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_32_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_32_2023-11-15_19-50-53_ADD0Tgm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_33_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_33_2023-11-15_19-50-53_5aJOhPt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_33_2023-11-15_19-50-53_7DYvD7x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_33_2023-11-15_19-50-53_QOj9FhQ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_35_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_38_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_39_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_41_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_43_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_44_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_45_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_47_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_48_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_49_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_50_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_66_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_6_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_81_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_82_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_83_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_84_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_86_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_86_2023-11-15_19-50-53_msGxv5h.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_87_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_89_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_89_2023-11-15_19-50-53_ZiuXc35.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_93_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_94_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_95_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_95_2023-11-15_19-50-53_VDs9YUh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_99_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/Portfolio/photo_9_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ShowDetail/photo_2023-11-18_02-46-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ShowDetail/photo_2023-11-18_02-46-02_g3NYiaP.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ShowDetail/photo_2023-11-18_02-46-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ShowDetail/photo_2023-11-18_02-49-38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ShowDetail/photo_2023-11-18_03-04-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ShowDetail/photo_2023-11-18_03-04-05_nwe38Cp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ShowDetail/photo_2023-11-18_03-05-51.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ShowDetail/photo_2023-11-18_03-05-51_hZvutQL.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ShowDetail/photo_2023-11-18_03-05-51_is9SVt1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ShowDetail/photo_2023-11-18_03-09-07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ShowDetail/photo_2023-11-18_03-09-24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/ShowDetail/photo_2023-11-18_03-09-47.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/header/photo_13_2023-11-16_14-10-57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/header/photo_16_2023-11-16_14-10-57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/header/photo_4_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/media/media/header/photo_9_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/hero-n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/photo_41_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/photo_42_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/photo_43_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/photo_44_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/photo_46_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/photo_47_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/photo_48_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/photo_49_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/photo_51_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/photo_52_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/photo_55_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/photo_56_2023-11-15_19-50-53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/sets_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/about-all/sets_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/back-one.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/carousel/vira1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/carousel/vira10.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/carousel/vira2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/carousel/vira5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/google-map-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/hero-n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/menu/menu-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/menu/menu-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/menu/menu-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/menu/menu-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/menu/menu-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/menu/menu-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/menu/menu-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/menu/menu-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/menu/menu-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/test/شاليهات.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/test/قاعة المناسبات.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/test/كافي.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/test/مطعم.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/static/assets/img/video.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0014_alter_navheader_navimg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0015_alter_homepage_hotitle_ar_alter_homepage_hotitle_en.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0016_alter_navheader_navimg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0017_rename_insta_media_instagram_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0018_media_mtitle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0019_media_map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/.idea/Paharat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/.idea/Paharat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Pipfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Portfolio/templates/Portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/Portfolio/templates/Portfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Portfolio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/Portfolio/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Scripts/django-admin.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Scripts/pip-3.9.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Scripts/pip.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/Scripts/pip.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Scripts/pip3.9.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/Scripts/pip3.9.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Scripts/pip3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/Scripts/pip3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Services/templates/Services.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/Services/templates/Services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Services/templates/include/External_Design.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/Services/templates/include/External_Design.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Services/templates/include/Interior_Design.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/Services/templates/include/Interior_Design.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Services/templates/include/land_scape.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/Services/templates/include/land_scape.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Services/templates/include/urban_design.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/Services/templates/include/urban_design.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/Services/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/Services/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/about/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/about/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/about/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/about/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/about/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/about/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/about/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/about/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/about_all/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/about_all/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/about_all/templates/About_Section.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/about_all/templates/About_Section.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/contact/templates/contact/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/contact/templates/contact/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/contact/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/contact/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/media/Team/MVIMG_20211106_144109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/media/Team/MVIMG_20211106_144109_ZfzJloX.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/media/Team/MVIMG_20211106_144119.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/owner/templates/owner.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/owner/templates/owner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/0002_alter_clients_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0002_alter_clients_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/0003_remove_clients_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0003_remove_clients_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/0004_alter_owner_options_remove_owner_owdesc_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0004_alter_owner_options_remove_owner_owdesc_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/0005_alter_services_options_remove_services_serfor_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0005_alter_services_options_remove_services_serfor_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/0006_alter_team_options_remove_team_timg_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0006_alter_team_options_remove_team_timg_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/0007_navheader_nalogo_ar.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0007_navheader_nalogo_ar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/0008_rename_hodescription_homepage_hodescription_ar_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0008_rename_hodescription_homepage_hodescription_ar_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/0009_alter_section_old_options_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0009_alter_section_old_options_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/0010_alter_portfolio_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0010_alter_portfolio_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/0011_alter_about_options_remove_about_ustitle_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0011_alter_about_options_remove_about_ustitle_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/0012_auto_20211221_1322.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0012_auto_20211221_1322.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/0013_navheader_navimg.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/0013_navheader_navimg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/templates/include/FQA.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/templates/include/FQA.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/templates/include/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/templates/include/HomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/templates/include/heroSection.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/templates/include/heroSection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/templates/include/heropage.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/templates/include/heropage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/templates/master.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/templates/master.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/paharat/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/vira/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/css/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/static/assets/css/detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/static/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/static/assets/img/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/static/assets/img/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/hero-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/old.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/test/1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/test/2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/test/3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/test/4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/test/Urban Design.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/test/default-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/test/ext.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/test/interior design.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/test/landscape.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/test/ms.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/test/old.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/static/assets/img/testimonials-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/team/templates/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/team/templates/team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViRa/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/ViRa/templates/base.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2zUk3xCRDGTWCvrv8FWOAUpIw1v" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bdcf9bf-1396-4b74-880a-129f948f992a" name="Changes" comment="" />
+      <created>1751792845414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751792845414</updated>
+      <workItem from="1751792849915" duration="611000" />
+    </task>
+    <servers />
+  </component>
+</project>
