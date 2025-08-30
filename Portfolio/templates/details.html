@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+  <link href="{% static 'asset/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'asset/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'asset/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    {% if LANGUAGE_CODE == 'ar' %}
+   <link href="{% static 'assets/css/detail.css' %}" rel="stylesheet">
+  <div class="container-ss" style="margin: 0px 60px 0px 60px;">
+    <div class="row">
+      <div class="col-9">
+          <div class="owl-carousel portfolio-details-carousel" style="height: 750px;">
+            <img href="{{portfolio_detail.PSImg.url}}" src="{{portfolio_detail.PSImg.url}}" class="img-fluid venobox play-btn mb-4" alt="" style="height: 750px;">
+              {% if portfolio_detail.PSImgUp_0 %}
+              <img href="{{portfolio_detail.PSImgUp_0.url}}" src="{{portfolio_detail.PSImgUp_0.url}}" class="img-fluid venobox play-btn mb-4" alt="" style="height: 750px;">
+               {% else %}
+              <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" class="img-fluid" alt="" style="height: 750px;">
+               {% endif %}
+              
+              {% if portfolio_detail.PSImgUp_00 %}
+              <img href="{{portfolio_detail.PSImgUp_00.url}}" src="{{portfolio_detail.PSImgUp_00.url}}" class="img-fluid venobox play-btn mb-4" alt="" style="height: 750px;">
+              {% else %}
+              <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" class="img-fluid" alt="" style="height: 750px;">
+              {% endif %}
+          </div>
+      </div>
+      <div class="col-3">
+         <div style="box-shadow: 0 30px 60px 0 rgb(0 0 0 / 10%);width: 100%;height: 100%;">
+          <div class="container">
+              <hr style="width: 100%;margin: 0px 0px 15px 0px;">
+              <h3 style="margin: 0px 25px 20px 25px;text-align: end;">{{portfolio_detail.PSTitle_ar}}</h3>
+              <hr style="width: 90%;">
+              <h6 style="margin: 20px 25px 20px 25px;text-align: end;"> {{portfolio_detail.PLCategoryf}} : <strong>قسم الشروع</strong></h6>
+              <h6 style="margin: 20px 25px 20px 25px;text-align: end;"><strong>وقت انشاء</strong> : {{portfolio_detail.PSData|date:'d M o'}}</h6>
+              <hr style="width: 90%;">
+              <h6 style="margin: 20px 25px 20px 25px;text-align: end;"><strong>وصف</strong> :<br> {{portfolio_detail.PSDescription_ar}}</h6>
+         </div>
+      </div>
+      </div>
+    </div>
+      <br> <hr><br>
+      <div class="row">
+          {% if portfolio_detail.PSImgUp_1 %}
+          <div class="col col-lg-4 col-md-6 portfolio-item">
+           <img href="{{portfolio_detail.PSImgUp_1.url}}" src="{{portfolio_detail.PSImgUp_1.url}}"
+                class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+          </div>
+          {% else %}
+          <div class="col col-lg-4 col-md-6 portfolio-item">
+          <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}"
+               class="img-fluid" alt="" style="height: 750px;" width="100%">
+          </div>
+          {% endif %}
+          
+          {% if portfolio_detail.PSImgUp_2 %}
+          <div class="col col-lg-4 col-md-6 portfolio-item">
+           <img href="{{portfolio_detail.PSImgUp_2.url}}" src="{{portfolio_detail.PSImgUp_2.url}}"
+                class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+          </div>
+          {% else %}
+          <div class="col col-lg-4 col-md-6 portfolio-item">
+          <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}"
+               class="img-fluid" alt="" style="height: 750px;" width="100%">
+          </div>
+           {% endif %}
+          
+          {% if portfolio_detail.PSImgUp_3 %}
+          <div class="col col-lg-4 col-md-6 portfolio-item">
+           <img href="{{portfolio_detail.PSImgUp_3.url}}" src="{{portfolio_detail.PSImgUp_3.url}}"
+                class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+          </div>
+          {% else %}
+          <div class="col col-lg-4 col-md-6 portfolio-item">
+          <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}"
+               class="img-fluid" alt="" style="height: 750px;" width="100%">
+          </div>
+           {% endif %}
+      </div>
+       <br> <hr><br>
+            <div class="row">
+          <div class="col">
+            {% if portfolio_detail.PSImgUp_4 %}
+           <img href="{{portfolio_detail.PSImgUp_4.url}}" src="{{portfolio_detail.PSImgUp_4.url}}"
+                class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+            {% else %}
+           <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" class="img-fluid" alt="" style="height: 750px;" width="100%">
+            {% endif %}
+          </div>
+      </div>
+             <br> <hr><br>
+        <div class="row">
+          <div class="col">
+           {% if portfolio_detail.PSImgUp_5 %}
+           <img href="{{portfolio_detail.PSImgUp_5.url}}" src="{{portfolio_detail.PSImgUp_5.url}}"
+                class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+           {% else %}
+           <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" class="img-fluid" alt="" style="height: 750px;" width="100%">
+           {% endif %}
+          </div>
+          <div class="col">
+                 {% if portfolio_detail.PSImgUp_6 %}
+           <img href="{{portfolio_detail.PSImgUp_6.url}}" src="{{portfolio_detail.PSImgUp_6.url}}" class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+            {% else %}
+              <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" class="img-fluid" alt="" style="height: 750px;" width="100%">
+            {% endif %}
+          </div>
+      </div>
+         <br> <hr><br>
+       <div class="row">
+          <div class="col">
+             {% if portfolio_detail.PSImgUp_7 %}
+             <img href="{{portfolio_detail.PSImgUp_7.url}}" src="{{portfolio_detail.PSImgUp_7.url}}"
+                  class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+             {% else %}
+              <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" class="img-fluid" alt="" style="height: 750px;" width="100%">
+             {% endif %}
+          </div>
+      </div>
+     <hr>
+</div>
+  {% else %}
+   <link href="{% static 'assets/css/detail.css' %}" rel="stylesheet">
+  <div class="container-ss" style="margin: 0px 60px 0px 60px;">
+    <div class="row">
+      <div class="col-9">
+          <div class="owl-carousel portfolio-details-carousel" style="height: 750px;">
+            <img href="{{portfolio_detail.PSImg.url}}" src="{{portfolio_detail.PSImg.url}}" class="img-fluid venobox play-btn mb-4" alt="" style="height: 750px;">
+            <img href="{{portfolio_detail.PSImgUp_0.url}}" src="{{portfolio_detail.PSImgUp_0.url}}" class="img-fluid venobox play-btn mb-4" alt="" style="height: 750px;">
+            <img href="{{portfolio_detail.PSImgUp_00.url}}" src="{{portfolio_detail.PSImgUp_00.url}}" class="img-fluid venobox play-btn mb-4" alt="" style="height: 750px;">
+          </div>
+      </div>
+      <div class="col-3">
+         <div style="box-shadow: 0 30px 60px 0 rgb(0 0 0 / 10%);width: 100%;height: 100%;">
+          <div class="container">
+              <hr style="width: 100%;margin: 0px 0px 15px 0px;">
+              <h3 style="margin: 0px 25px 10px 25px">{{portfolio_detail.PSTitle}}</h3>
+              <hr style="width: 90%;">
+              <h6 style="margin: 20px 25px 20px 25px;"><strong>Category</strong> : {{portfolio_detail.PLCategoryf}}</h6>
+              <h6 style="margin: 20px 25px 20px 25px;"><strong>Project date</strong> : {{portfolio_detail.PSData|date:'d M o'}}</h6>
+              <hr style="width: 90%;">
+              <h6 style="margin: 20px 25px 20px 25px;"><strong>Description</strong> :<br> {{portfolio_detail.PSDescription}}</h6>
+         </div>
+      </div>
+      </div>
+    </div>
+         <br> <hr><br>
+      <div class="row">
+          {% if portfolio_detail.PSImgUp_1 %}
+          <div class="col col-lg-4 col-md-6 portfolio-item">
+           <img href="{{portfolio_detail.PSImgUp_1.url}}" src="{{portfolio_detail.PSImgUp_1.url}}"
+                class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+          </div>
+          {% else %}
+          <div class="col col-lg-4 col-md-6 portfolio-item">
+          <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}"
+               class="img-fluid" alt="" style="height: 750px;" width="100%">
+          </div>
+          {% endif %}
+          
+          {% if portfolio_detail.PSImgUp_2 %}
+          <div class="col col-lg-4 col-md-6 portfolio-item">
+           <img href="{{portfolio_detail.PSImgUp_2.url}}" src="{{portfolio_detail.PSImgUp_2.url}}"
+                class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+          </div>
+          {% else %}
+          <div class="col col-lg-4 col-md-6 portfolio-item">
+          <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}"
+               class="img-fluid" alt="" style="height: 750px;" width="100%">
+          </div>
+           {% endif %}
+          
+          {% if portfolio_detail.PSImgUp_3 %}
+          <div class="col col-lg-4 col-md-6 portfolio-item">
+           <img href="{{portfolio_detail.PSImgUp_3.url}}" src="{{portfolio_detail.PSImgUp_3.url}}"
+                class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+          </div>
+          {% else %}
+          <div class="col col-lg-4 col-md-6 portfolio-item">
+          <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}"
+               class="img-fluid" alt="" style="height: 750px;" width="100%">
+          </div>
+           {% endif %}
+      </div>
+       <br> <hr><br>
+            <div class="row">
+          <div class="col">
+            {% if portfolio_detail.PSImgUp_4 %}
+           <img href="{{portfolio_detail.PSImgUp_4.url}}" src="{{portfolio_detail.PSImgUp_4.url}}"
+                class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+            {% else %}
+           <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" class="img-fluid" alt="" style="height: 750px;" width="100%">
+            {% endif %}
+          </div>
+      </div>
+             <br> <hr><br>
+        <div class="row">
+          <div class="col">
+           {% if portfolio_detail.PSImgUp_5 %}
+           <img href="{{portfolio_detail.PSImgUp_5.url}}" src="{{portfolio_detail.PSImgUp_5.url}}"
+                class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+           {% else %}
+           <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" class="img-fluid" alt="" style="height: 750px;" width="100%">
+           {% endif %}
+          </div>
+          <div class="col">
+                 {% if portfolio_detail.PSImgUp_6 %}
+           <img href="{{portfolio_detail.PSImgUp_6.url}}" src="{{portfolio_detail.PSImgUp_6.url}}"
+                class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+            {% else %}
+              <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" class="img-fluid" alt="" style="height: 750px;" width="100%">
+            {% endif %}
+          </div>
+      </div>
+         <br> <hr><br>
+       <div class="row">
+          <div class="col">
+             {% if portfolio_detail.PSImgUp_7 %}
+             <img href="{{portfolio_detail.PSImgUp_7.url}}" src="{{portfolio_detail.PSImgUp_7.url}}"
+                  class="img-fluid portfolio-lightbox preview-link venobox play-btn mb-4" alt="" style="height: 750px;" width="100%">
+             {% else %}
+              <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" class="img-fluid" alt="" style="height: 750px;" width="100%">
+             {% endif %}
+          </div>
+      </div>
+     <hr>
+</div>
+  {% endif %}
+
+
+{% endblock body %}

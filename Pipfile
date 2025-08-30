@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+asgiref = "==3.9.1"
+certifi = "==2025.8.3"
+distlib = "==0.4.0"
+djangorestframework-jwt = "==1.11.0"
+filelock = "==3.19.1"
+packaging = "==25.0"
+pipenv = "==2025.0.4"
+platformdirs = "==4.3.8"
+pyjwt = "==1.7.1"
+sqlparse = "==0.5.3"
+tzdata = "==2025.2"
+virtualenv = "==20.34.0"
+django = "*"
+pipreqs = "*"
+django-jazzmin = "*"
+pillow = "*"
+python-decouple = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

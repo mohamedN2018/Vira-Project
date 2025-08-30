@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+{% for externaldesigndetail in External_Design_Detail %}
+{% if LANGUAGE_CODE == 'ar' %}
+<link href="{% static 'assets/css/detail.css' %}" rel="stylesheet">
+{% if externaldesigndetail.EDDImg_1 %}
+<img class="u-section-5 venobox play-btn img-wid" href="{{externaldesigndetail.EDDImg_1.url}}"
+     src="{{externaldesigndetail.EDDImg_1.url}}"  alt="">
+{% else %}
+<img class="u-section-5 img-wid" src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%"
+     height="800px" alt="">
+{% endif %}
+<div class="container text-center" style="justify-content: center;">
+    <div class="row align-items u-style-x">
+        <h3>{{externaldesigndetail.EDDDescriptions_ar}}
+        </h3>
+    </div>
+</div>
+<div class="container">
+    <section>
+        <div class="container-fluid-ms text-center">
+            <div class="row">
+                <div class="col-6">
+                    {% if externaldesigndetail.EDDImg_2 %}
+                    <img class="venobox play-btn" href="{{externaldesigndetail.EDDImg_2.url}}"
+                         src="{{externaldesigndetail.EDDImg_2.url}}" width="100%">
+                    {% else %}
+                    <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%">
+                    {% endif %}
+                </div>
+                <div class="col-6">
+                        <h2 class="u-text u-text-2">{{externaldesigndetail.EDDTitle_1_ar}}</h2>
+                        <p class="u-text u-text-3 ">{{externaldesigndetail.EDDDescriptions_1_ar}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid-ms">
+            <div class="row">
+                <div class="col">
+                    {% if externaldesigndetail.EDDImg_3 %}
+                    <img class="venobox play-btn img-wid" href="{{externaldesigndetail.EDDImg_3.url}}"
+                         src="{{externaldesigndetail.EDDImg_3.url}}">
+                    {% else %}
+                    <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid-ms text-center">
+            <div class="row">
+                <div class="col-6">
+                        <h2 class="u-text u-text-2">{{externaldesigndetail.EDDTitle_2_ar}}</h2>
+                        <p class="u-text u-text-3 ">{{externaldesigndetail.EDDDescriptions_2_ar}}</p>
+                </div>
+                <div class="col-6">
+                    {% if externaldesigndetail.EDDImg_2 %}
+                    <img class="venobox play-btn" href="{{externaldesigndetail.EDDImg_4.url}}"
+                         src="{{externaldesigndetail.EDDImg_4.url}}" width="100%">
+                    {% else %}
+                    <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%">
+                    {% endif %}
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr>
+</div>
+
+
+{% else %}
+
+
+<link href="{% static 'assets/css/detail.css' %}" rel="stylesheet">
+{% if externaldesigndetail.EDDImg_1 %}
+<img class="u-section-5 venobox play-btn img-wid" href="{{externaldesigndetail.EDDImg_1.url}}"
+     src="{{externaldesigndetail.EDDImg_1.url}}" alt="">
+{% else %}
+<img class="u-section-5" src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%"
+     height="800px" alt="">
+{% endif %}
+<div class="container">
+    <div class="row align-items u-style-x">
+        <h3>{{externaldesigndetail.EDDDescriptions}}
+        </h3>
+    </div>
+</div>
+<div class="container">
+    <section>
+        <div class="container-fluid-ms">
+            <div class="row">
+                <div class="col u-style-xx d-flex justify-content-center">
+                    {% if externaldesigndetail.EDDImg_2 %}
+                    <img class="venobox play-btn" href="{{externaldesigndetail.EDDImg_2.url}}" alt="" width="100%"
+                         src="{{externaldesigndetail.EDDImg_2.url}}">
+                    {% else %}
+                    <img alt="" width="100%" src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}">
+                    {% endif %}
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <h2 class="u-text u-text-2 text-center">{{externaldesigndetail.EDDTitle_1}}</h2>
+                        <p class="u-text u-text-3 text-center">{{externaldesigndetail.EDDDescriptions_1}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container-fluid-ms">
+            <div class="row">
+                <div class="col u-style-xx d-flex justify-content-center">
+                    {% if externaldesigndetail.EDDImg_3 %}
+                    <img class="venobox play-btn img-wid" href="{{externaldesigndetail.EDDImg_3.url}}" alt=""
+                         src="{{externaldesigndetail.EDDImg_3.url}}">
+                    {% else %}
+                    <img alt="" width="100%" src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container-fluid-ms">
+            <div class="row">
+                <div class="col-6 text-center">
+                    <h2 class="u-text u-text-2">{{externaldesigndetail.EDDTitle_2}}</h2>
+                    <p class="u-text u-text-3 ">{{externaldesigndetail.EDDDescriptions_2_en}}</p>
+                </div>
+                <div class="col-6">
+                    {% if externaldesigndetail.EDDImg_4 %}
+                    <img class="venobox play-btn" href="{{externaldesigndetail.EDDImg_4.url}}"
+                         src="{{externaldesigndetail.EDDImg_4.url}}" width="100%">
+                    {% else %}
+                    <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%">
+                    {% endif %}
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    {% endif %}
+    {% endfor %}
+</div>
+
+
+{% endblock body %}

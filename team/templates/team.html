@@ -1,0 +1,17 @@
+<!-- ======= Team Section ======= -->
+{% load static %}
+<section id="team" class="team section-bg">
+    <div class="w-100">
+        {% if LANGUAGE_CODE == 'ar' %}
+        <h1 class="text-center"> خريطة جوجل </h1>
+
+        {% else %}
+        <h1 class="text-center"> google map </h1>
+        {% endif %}
+
+        <iframe class="w-100"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1124.9391166025212!2d40.4895562!3d21.5102035!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15ea315b806451bb%3A0x5d5c97f2293f60ea!2z2YXZhtiq2KzYuSDZiNmE2KfZiNmG2Kwg2YHZitix2KcgVmlyYQ!5e1!3m2!1sar!2seg!4v1700226377294!5m2!1sar!2seg"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section><!-- End Team Section -->

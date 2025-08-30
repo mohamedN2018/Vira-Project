@@ -1,0 +1,98 @@
+{% if LANGUAGE_CODE == 'ar' %}
+{% load static %}
+
+<!-- ======= Why Us Section ======= -->
+<section id="why-us_ar" class="why-us">
+      <div class="container">
+        {% for about_section in about_all %}
+        <div class="row">
+          <div class="col-xl-4 col-lg-5" data-aos="fade-up">
+            <div class="content text-center shadow-sm">
+              <div class="text-pho">
+                <h3>{{about_section.ASTitle_ar}}</h3>
+              <p>{{about_section.UsDescription_ar}}</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xl-8 col-lg-7 d-flex">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row why-us">
+                <div class="col-xl-4 d-flex align-items-stretch img-picture" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon-box mt-4 mt-xl-0" >
+                    <i class="bx bx-receipt"></i>
+                    <h4>{{about_section.ASTitle_1_ar}}</h4>
+                    <p>{{about_section.ASDescription_1_ar}}</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>{{about_section.ASTitle_2_ar}}</h4>
+                    <p>{{about_section.ASDescription_2_ar}}</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon-box mt-4 mt-xl-0" >
+                    <i class="bx bx-images"></i>
+                    <h4>{{about_section.ASTitle_3_ar}}</h4>
+                    <p>{{about_section.ASDescription_3_ar}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        {% endfor %}
+      </div>
+    </section><!-- End Why Us Section -->
+
+{% else %}
+<!-- ======= Why Us Section ======= -->
+<section id="why-us_en" class="why-us">
+      <div class="container">
+        {% for about_section in about_all %}
+        <div class="row">
+          <div class="col-xl-4 col-lg-5"   data-aos="fade-up">
+            <div class="content">
+              <h3>{{about_section.ASTitle_en}}</h3>
+              <p>{{about_section.UsDescription_en}}</p>
+              <div class="text-center">
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-7 d-flex">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch"  data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon-box mt-4 mt-xl-0" >
+                    <i class="bx bx-receipt"></i>
+                    <h4>{{about_section.ASTitle_1_en}}</h4>
+                    <p>{{about_section.ASDescription_1_en}}</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch"  data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon-box mt-4 mt-xl-0" >
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>{{about_section.ASTitle_2_en}}</h4>
+                    <p>{{about_section.ASDescription_2_en}}</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch"  data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-images"></i>
+                    <h4>{{about_section.ASTitle_3_en}}</h4>
+                    <p>{{about_section.ASDescription_3_en}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section><!-- End Why Us Section -->
+{% endif %}

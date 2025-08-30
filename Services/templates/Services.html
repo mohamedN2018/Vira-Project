@@ -1,0 +1,118 @@
+{% load static %}
+{% load i18n %}
+
+<!-- ======= Services Section ======= -->
+<section id="services" class="values">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            {% for services_t in Services_name %}
+            {% if LANGUAGE_CODE == 'ar' %}
+            <h2>{{services_t.TiTitle_ar}}</h2>
+            <p>{{services_t.TiDesc_ar}}</p>
+            {% else %}
+            <h2>{{services_t.TiTitle}}</h2>
+            <p>{{services_t.TiDesc}}</p>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="row">
+
+
+            <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+                <div class="card" style="background-image: url({% static 'assets/img/test/مطعم.jpg' %});">
+                    <div class="card-body">
+                        {% for urban_design in Urban_Des %}
+                        {% if LANGUAGE_CODE == 'ar' %}
+                        <h5 class="card-title"><a href="{% url 'Services:Urban_Des' %}">{{urban_design.UName_ar}}</a>
+                        </h5>
+                        <p class="card-text text-center">{{urban_design.UDescriptions_ar}}</p>
+                        <div class="read-more -"><a href="{% url 'Services:Urban_Des' %}"><i
+                                class="icofont-arrow-right">
+                        </i> اقرأ أكثر </a></div>
+                        {% else %}
+                        <h5 class="card-title"><a href="{% url 'Services:Urban_Des' %}">{{urban_design.UName}}</a></h5>
+                        <p class="card-text text-center">{{urban_design.UDescriptions}}</p>
+                        <div class="read-more"><a href="{% url 'Services:Urban_Des' %}"><i class="icofont-arrow-right">
+                        </i> Read More </a></div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100">
+                <div class="card" style="background-image: url({% static 'assets/img/test/كافي.png' %});">
+                    <div class="card-body">
+                        {% for landscape in Land_Scape %}
+                        {% if LANGUAGE_CODE == 'ar' %}
+                        <h5 class="card-title"><a href="{% url 'Services:landscape' %}">{{landscape.LSName_ar}}</a></h5>
+                        <p class="card-text text-center">{{landscape.LSDescription_ar}}</p>
+                        <div class="read-more"><a href="{% url 'Services:landscape' %}"><i class="icofont-arrow-right">
+                        </i> اقرأ أكثر</a></div>
+                        {% else %}
+                        <h5 class="card-title"><a href="{% url 'Services:landscape' %}">{{landscape.LSName}}</a></h5>
+                        <p class="card-text text-center">{{landscape.LSDescription}}</p>
+                        <div class="read-more"><a href="{% url 'Services:landscape' %}"><i class="icofont-arrow-right">
+                        </i> Read More</a></div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card" style="background-image: url({% static 'assets/img/test/شاليهات.jpg' %});">
+                    <div class="card-body">
+                        {% for interior_design in InteriorDesign %}
+                        {% if LANGUAGE_CODE == 'ar' %}
+                        <h5 class="card-title"><a href="{% url 'Services:Interior_Design' %}">{{interior_design.IDName_ar}}</a>
+                        </h5>
+                        <p class="card-text text-center">{{interior_design.IDDescription_ar}}</p>
+                        <div class="read-more"><a href="{% url 'Services:Interior_Design' %}"><i
+                                class="icofont-arrow-right">
+                        </i> اقرأ أكثر</a></div>
+                        {% else %}
+                        <h5 class="card-title"><a
+                                href="{% url 'Services:Interior_Design' %}">{{interior_design.IDName}}</a></h5>
+                        <p class="card-text text-center">{{interior_design.IDDescription}}</p>
+                        <div class="read-more"><a href="{% url 'Services:Interior_Design' %}"><i
+                                class="icofont-arrow-right">
+                        </i> Read More</a></div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card" style="background-image: url({% static 'assets/img/test/قاعة المناسبات.jpg' %});">
+                    <div class="card-body">
+                        {% for external_design in ExternalDesign %}
+                        {% if LANGUAGE_CODE == 'ar' %}
+                        <h5 class="card-title"><a href="{% url 'Services:ExternalDesign' %}">{{external_design.EDName_ar}}</a>
+                        </h5>
+                        <p class="card-text text-center">{{external_design.EDDescription_ar}}</p>
+                        <div class="read-more"><a href="{% url 'Services:ExternalDesign' %}"><i
+                                class="icofont-arrow-right">
+                        </i> اقرأ أكثر</a></div>
+                        {% else %}
+                        <h5 class="card-title"><a
+                                href="{% url 'Services:ExternalDesign' %}">{{external_design.EDName}}</a></h5>
+                        <p class="card-text text-center">{{external_design.EDDescription}}</p>
+                        <div class="read-more"><a href="{% url 'Services:ExternalDesign' %}"><i
+                                class="icofont-arrow-right">
+                        </i> Read More</a></div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<!-- End Values Section -->

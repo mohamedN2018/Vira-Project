@@ -1,0 +1,14 @@
+{% load static %}
+<!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="fade-up">
+          <img src="{{ clients.CLimage }}" alt="">
+
+        <div class="owl-carousel clients-carousel">
+          {% for clients in clients_far %}
+          <img src="/media/{{clients.CLimage}}"  alt="">
+          {% endfor %}
+        </div>
+      </div>
+    </section><!-- End Clients Section -->
+

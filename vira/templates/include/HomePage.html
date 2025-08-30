@@ -1,0 +1,74 @@
+{% load static %}
+  <link href="{% static 'asset/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'asset/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'asset/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  
+{% if LANGUAGE_CODE  == 'ar' %}
+<!-- ======= Portfolio Section ======= -->
+    <section id="portfolio_ar" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-up">معرض الاعمال</h2>
+          <div class="col-lg-12 d-flex justify-content-center">
+          <a>  لتتمكن من مشاهدة المشاريع بشكل اسرع<a href="{% url 'Portfolio:feed' %}"
+             style="width: 14%;height: 90%;background-color: #5f7b8f;margin: 0px 10px 15px 10px;color: #fff;text-align: center;font-size: 20px;"
+             class="details-link" title="More Details">جميع الاعمال<i class="bx bx-link"></i></a> اذهب الي المعرض من هنا  </a>
+          </div>
+        </div>
+        
+        
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          {% for portfoliolist in portfolio_er %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{{portfoliolist.PSImg.url}}" class="img-fluid portfolio-lightbox preview-link" alt="">
+            <div class="portfolio-info">
+              <h4 >{{portfoliolist.PSTitle_ar}}</h4>
+              <p>{{portfoliolist.PLCategoryf}}</p>
+              
+              <a href="{{portfoliolist.PSImg.url}}" data-gall="portfolioGallery" class="venobox preview-link" title="{{portfoliolist.PSTitle_ar}} / {{portfoliolist.PLCategoryf}}"><i class="bx bx-plus"></i></a>
+              <a href="{% url 'business_fair:portfolio_detail' portfoliolist.LSlug %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </section>
+ <!-- End Portfolio Section -->
+    {% else %}
+<!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+ 
+        <div class="section-title">
+          <h2 data-aos="fade-up">Portfolio</h2>
+          <div class="col-lg-12 d-flex justify-content-center">
+          <a>  Go to the exhibition here  <a href="{% url 'Portfolio:feed' %}"
+             style="width: 14%;height: 90%;background-color: #5f7b8f;margin: 0px 10px 15px 10px;color: #fff;text-align: center;font-size: 20px;"
+             class="details-link" title="More Details">All Projects<i class="bx bx-link"></i></a> To be able to view projects faster </a>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          {% for portfoliolist in portfolio_er %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{{portfoliolist.PSImg.url}}" class="img-fluid portfolio-lightbox preview-link" alt="">
+            <div class="portfolio-info">
+              <h4 >{{portfoliolist.PSTitle}}</h4>
+              <p>{{portfoliolist.PLCategoryf}}</p>
+              
+              <a href="{{portfoliolist.PSImg.url}}" data-gall="portfolioGallery" class="venobox preview-link" title="{{portfoliolist.PSTitle_ar}} / {{portfoliolist.PLCategoryf}}"><i class="bx bx-plus"></i></a>
+              <a href="{% url 'business_fair:portfolio_detail' portfoliolist.LSlug %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </section>
+ <!-- End Portfolio Section -->
+    {% endif %}

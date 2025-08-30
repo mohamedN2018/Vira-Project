@@ -1,0 +1,21 @@
+{% load static %}
+{% load i18n %}
+
+<!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center p-0">
+      {% if LANGUAGE_CODE == 'ar' %}
+        <div class="container text-center content-hero" data-aos="fade-in">
+            {% for homepage in home_page %}
+            <h1>{{homepage.HoTitle_ar}}</h1>
+            <h2 style="margin-top: 25px;">{{homepage.HoDescription_ar}}</h2>
+            {% endfor %}
+        </div>
+      {% else %}
+      <div class="container" data-aos="fade-in">
+          {% for homepage in home_page %}
+          <h1>{{homepage.HoTitle_en}}</h1>
+           <h2 style="margin-top: 25px;">{{homepage.HoDescription_en}}</h2>
+          {% endfor %}
+        </div>
+      {% endif %}
+  </section><!-- End Hero -->

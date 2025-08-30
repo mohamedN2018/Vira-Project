@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+  <link href="{% static 'asset/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'asset/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'asset/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <style>
+
+    .pagination a {
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      background-color: #bec7cf;
+      border-radius: 8px;
+      border: 0px double #cccccc;
+      color: #eeeeee;
+      font-size: 20px;
+      width: 60px;
+      height: 30px;
+      margin: 0px 5px 0px 5px;
+        }
+   .pagination span.old-ms {
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      background-color: #464f58;
+      border-radius: 8px;
+      border: 0px double #cccccc;
+      color: #eeeeee;
+      font-size: 20px;
+      width: 60px;
+      height: 30px;
+   }
+    </style>
+  
+{% if LANGUAGE_CODE  == 'ar' %}
+<!-- ======= Portfolio Section ======= -->
+    <section id="portfolio_ar" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-up">شاليهات</h2>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          {% for portfoliolist in port_folio %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <a href="{% url 'business_fair:portfolio_detail' portfoliolist.LSlug %}"><img src="{{portfoliolist.PSImg.url}}" class="img-fluid portfolio-lightbox preview-link" alt=""></a>
+            <div class="portfolio-info">
+              <h4 >{{portfoliolist.PSTitle_ar}}</h4>
+              <p>{{portfoliolist.PLCategoryf}}</p>
+              
+              <a href="{{portfoliolist.PSImg.url}}" data-gall="portfolioGallery" class="venobox preview-link" title="{{portfoliolist.PSTitle_ar}} / {{portfoliolist.PLCategoryf}}"><i class="bx bx-plus"></i></a>
+              <a href="{% url 'business_fair:portfolio_detail' portfoliolist.LSlug %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+   
+
+           <div class="pagination" data-aos="fade-up">
+          <div class="row align-items-center">
+            <span class="step-links">
+                {% if port_folio.has_previous %}
+                    <a href="?page=1" > اول {{ port_folio.number }} </a>
+                    <a href="?page={{ port_folio.previous_page_number }}">{{ port_folio.paginator.num_pages }} << </a>
+                {% endif %}
+                
+                {% if port_folio.has_next %}
+                    <a href="?page={{ port_folio.next_page_number }}">{{ port_folio.number }} >> </a>
+                    <a href="?page={{ port_folio.paginator.num_pages }}"> اخر {{ port_folio.paginator.num_pages }} </a>
+                {% endif %}
+            </span>
+        </div>
+      </div>
+      </div>
+    </section>
+ <!-- End Portfolio Section -->
+
+    {% else %}
+<!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+ 
+        <div class="section-title" data-aos="fade-up" data-aos-delay="200">
+          <h2 data-aos="fade-up">Chalets</h2>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          {% for portfoliolist in port_folio %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-aos="fade-up" data-aos-delay="200">
+            <a href="{% url 'business_fair:portfolio_detail' portfoliolist.LSlug %}"><img src="{{portfoliolist.PSImg.url}}" class="img-fluid portfolio-lightbox preview-link" alt=""></a>
+
+            <div class="portfolio-info">
+              <h4 >{{portfoliolist.PSTitle}}</h4>
+              <p>{{portfoliolist.PLCategoryf}}</p>
+              
+              <a href="{{portfoliolist.PSImg.url}}" data-gall="portfolioGallery" class="venobox preview-link" title="{{portfoliolist.PSTitle_ar}} / {{portfoliolist.PLCategoryf}}"><i class="bx bx-plus"></i></a>
+              <a href="{% url 'business_fair:portfolio_detail' portfoliolist.LSlug %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+
+      </div>
+    </section>
+ <!-- End Portfolio Section -->
+    {% endif %}
+
+{% endblock body %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

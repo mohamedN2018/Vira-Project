@@ -1,0 +1,97 @@
+{% load static %}
+
+{% if LANGUAGE_CODE == 'ar' %}
+<!-- ======= About Section ======= -->
+<section id="about" class="about section-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch"
+                 data-aos="fade-right">
+                <video class="vedios-viraone" width="385" height="700" controls>
+                    <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
+                    <source src="{% static 'assets/img/video.mp4' %}" style="height: 650px" type=video/mp4>
+                </video>
+            </div>
+            {% for about in about_bar %}
+            <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+                <h3 class="text-center" data-aos="fade-up">{{about.AOTitle_1_ar}}</h3>
+                <h4 class="text-center" style="color: rgba(1,1,1,0.77)" data-aos="fade-up">
+                    {{about.AODescription_1_ar}}</h4>
+
+                <div class="icon-box" data-aos="fade-up">
+                    <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                    <h4 class="title text-center"><a href="">{{about.AOTitle_2_ar}}</a></h4>
+                    <h4 class="description text-center" style="color: rgba(1,1,1,0.77)">
+                        {{about.AODescription_2_ar}}</h4>
+                </div>
+
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="bx bx-gift"></i></div>
+                    <h4 class="title text-center"><a href="">{{about.AOTitle_3_ar}}</a></h4>
+                    <h4 class="description text-center" style="color: rgba(1,1,1,0.77)">
+                        {{about.AODescription_3_ar}}</h4>
+                </div>
+
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon"><i class="bx bx-atom"></i></div>
+                    <h4 class="title text-center "><a src="{% url 'about:menu' %}">{{about.AOTitle_4_ar}}</a></h4>
+                    <h4 class="description text-center" style="color: rgba(1,1,1,0.77)">
+                        {{about.AODescription_4_ar}}</h4>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<!-- End About Section -->
+{% else %}
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about section-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch"
+                 data-aos="fade-right">
+                <video class="vedios-viraone" width="385" height="700" controls>
+                    <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
+                    <source src="{% static 'assets/img/video.mp4' %}" style="height: 650px" type=video/mp4>
+                </video>
+            </div>
+            {% for about in about_bar %}
+            <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+                <h3 class="text-center" data-aos="fade-up">{{about.AOTitle_1_en}}</h3>
+                <h4 class="text-center" style="color: rgba(1,1,1,0.77)" data-aos="fade-up">
+                    {{about.AODescription_1_en}}</h4>
+
+                <div class="icon-box" data-aos="fade-up">
+                    <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                    <h4 class="title text-center"><a href="">{{about.AOTitle_2_en}}</a></h4>
+                    <h4 class="description text-center" style="color: rgba(1,1,1,0.77)">
+                        {{about.AODescription_2_en}}</h4>
+                </div>
+
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="bx bx-gift"></i></div>
+                    <h4 class="title text-center"><a href="">{{about.AOTitle_3_en}}</a></h4>
+                    <h4 class="description text-center" style="color: rgba(1,1,1,0.77)">
+                        {{about.AODescription_3_en}}</h4>
+                </div>
+
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon"><i class="bx bx-atom"></i></div>
+                    <h4 class="title text-center "><a src="{% url 'about:menu' %}">{{about.AOTitle_4_en}}</a></h4>
+                    <h4 class="description text-center" style="color: rgba(1,1,1,0.77)">
+                        {{about.AODescription_4_en}}</h4>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<!-- End About Section -->
+
+{% endif %}
+
+

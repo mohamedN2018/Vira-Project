@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% include 'Services' %}
+{% include 'clients' %}
+{% include 'owner' %}
+{% include 'team' %}
+{% include 'portfolio' %}
+{% include 'about_all' %}
+{% include 'about' %}
+{% include 'Pricing' %}
+
+
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+<!-- ======= Hero Section ======= -->
+{% include 'include/heropage.html' %}
+<!-- End Hero -->
+<main id="main">
+    <!-- ======= Why Us Section ======= -->
+    {% include 'About_Section.html' %}
+    <!-- ======= End Why Us Section ======= -->
+
+    <!-- ======= About Section ======= -->
+    {% include 'about.html' %}
+    <!-- ======= end About Section ======= -->
+
+    <!-- ======= Hero Section ======= -->
+    <br>
+    <hr>
+    <br>
+    <!-- ======= end Hero Section ======= -->
+
+    <!-- ======= Services Section ======= -->
+    {% include 'Services.html' %}
+    <!-- ======= end Services Section ======= -->
+
+    <!-- ======= Testimonials Section ======= -->
+    {% include 'owner.html' %}
+    <!-- ======= end Testimonials Section ======= -->
+
+    <!-- ======= Portfolio Section ======= -->
+    {% include 'include/HomePage.html' %}
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    {% include 'team.html' %}
+    <!-- ======= end Team Section ======= -->
+    <br>
+    <hr>
+    <br>
+    <!-- ======= F.A.Q Section ======= -->
+
+</main>
+<!-- End #main -->
+{% endblock body %}

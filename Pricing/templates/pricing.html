@@ -1,0 +1,59 @@
+{% if LANGUAGE_CODE  == 'ar'%}
+<!-- ======= Pricing Section ======= -->
+<section id="pricings" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          {% for pricing_t in Pricing_Text %}
+          <h2 data-aos="fade-up">{{pricing_t.PrTitle_ar}}</h2>
+          <p data-aos="fade-up">{{pricing_t.PrDescription_ar}}</p>
+       {% endfor %}
+        </div>
+
+        <div class="row">
+
+          {% for pricing_card in PricingCard %}
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="box featured">
+              <h3>{{pricing_card.PrTitle_ar}}</h3>
+              <h4><sup>{{pricing_card.Currency_symbol}}</sup>{{pricing_card.PrPricing}}<br><span> / {{pricing_card.PRSpaces}}</span></h4>
+              <ul>
+                <li>{{pricing_card.PrDescription_ar}}</li>
+              </ul>
+            </div>
+          </div>
+       {% endfor %}
+        </div>
+      </div>
+    </section>
+<!-- End Pricing Section -->
+{% else %}
+<!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          {% for pricing_t in Pricing_Text %}
+          <h2 data-aos="fade-up">{{pricing_t.PrTitle_en}}</h2>
+          <p data-aos="fade-up">{{pricing_t.PrDescription_en}}</p>
+       {% endfor %}
+        </div>
+
+        <div class="row">
+
+          {% for pricing_card in PricingCard %}
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="box featured">
+              <h3>{{pricing_card.PrTitle_en}}</h3>
+              <h4><sup>{{pricing_card.Currency_symbol}}</sup>{{pricing_card.PrPricing}}<span> / {{pricing_card.PRSpaces}}</span></h4>
+              <ul>
+                <li>{{pricing_card.PrDescription_en}}</li>
+              </ul>
+            </div>
+          </div>
+       {% endfor %}
+        </div>
+      </div>
+    </section>
+<!-- End Pricing Section -->
+{% endif %}

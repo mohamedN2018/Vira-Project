@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+{% for showdetail in Show_detail %}
+{% if LANGUAGE_CODE == 'ar' %}
+<link href="{% static 'assets/css/detail.css' %}" rel="stylesheet">
+{% if showdetail.SDImg_1 %}
+<img class="u-section-5 venobox play-btn img-wid" href="{{showdetail.SDImg_1.url}}" alt=""
+     src="{{showdetail.SDImg_1.url}}">
+{% else %}
+<img class="u-section-5 img-wid"  alt=""
+     src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}">
+{% endif %}
+<div class="container">
+        <h3 class="text-center m-5">{{showdetail.SDDescriptions_ar}}</h3>
+</div>
+<div class="container" style="justify-content: center;">
+
+    <section>
+        <div class="container-fluid-ms">
+            <div class="row">
+                <div class="col u-style-xx d-flex">
+                    {% if showdetail.SDImg_2 %}
+                    <img class="venobox play-btn" href="{{showdetail.SDImg_2.url}}" alt="" width="100%"
+                         src="{{showdetail.SDImg_2.url}}">
+                    {% else %}
+                    <img alt="" width="100%" src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}">
+                    {% endif %}
+                </div>
+                <div class="col text-center">
+                        <h2 class="u-text u-text-2 text-center">{{showdetail.SDTitle_1_ar}}</h2>
+                        <p class="u-text u-text-3 ">{{showdetail.SDDescriptions_1_ar}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid-ms">
+            <div class="row">
+                <div class="col">
+                    {% if showdetail.SDImg_3 %}
+                    <img class="u-section-5 venobox play-btn" href="{{showdetail.SDImg_3.url}}" width="100%"
+                         height="800px" alt="" src="{{showdetail.SDImg_3.url}}">
+                    {% else %}
+                    <img class="u-section-5" width="100%" height="800px" alt=""
+                         src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid-ms">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="u-text u-text-2">{{showdetail.SDTitle_2_ar}}</h2>
+                    <p class="u-text u-text-3 ">{{showdetail.SDDescriptions_2_ar}}</p>
+                </div>
+                <div class="col">
+                    {% if showdetail.SDImg_4 %}
+                    <img class="venobox play-btn" href="{{showdetail.SDImg_4.url}}" src="/media/{{showdetail.SDImg_4}}"
+                         width="100%">
+                    {% else %}
+                    <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+</div>
+
+
+{% else %}
+
+
+<link href="{% static 'assets/css/detail.css' %}" rel="stylesheet">
+{% if showdetail.SDImg_1 %}
+<img class="u-section-5 venobox play-btn img-wid" href="{{showdetail.SDImg_1.url}}" alt=""
+     src="{{showdetail.SDImg_1.url}}">
+{% else %}
+<img class="u-section-5 img-wid" alt=""
+     src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}">
+{% endif %}
+<div class="text-center m-5">
+        <h3>{{showdetail.SDDescriptions}}</h3>
+</div>
+
+<div class="container text-center">
+
+    <section>
+        <div class="container-fluid-ms" data-aos="fade-up">
+            <div class="row">
+                <div class="col">
+                    {% if showdetail.SDImg_2 %}
+                    <img href="{{showdetail.SDImg_2.url}}" class="venobox play-btn " alt="" width="100%"
+                         src="{{showdetail.SDImg_2.url}}">
+                    {% else %}
+                    <img alt="" width="100%" src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}">
+                    {% endif %}
+                </div>
+                <div class="col">
+                        <h2 class="u-text u-text-2">{{showdetail.SDTitle_1}}</h2>
+                        <p class="u-text u-text-3 ">{{showdetail.SDDescriptions_1}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid-ms" data-aos="fade-left">
+            <div class="row">
+                <div class="col">
+                    {% if showdetail.SDImg_2 %}
+                    <img href="{{showdetail.SDImg_3.url}}" class="venobox play-btn " alt="" width="100%"
+                         src="{{showdetail.SDImg_3.url}}">
+                    {% else %}
+                    <img alt="" width="100%" src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid-ms" data-aos="fade-right">
+            <div class="row">
+                <div class="col">
+                    <h2 class="u-text u-text-2">{{showdetail.SDTitle_2}}</h2>
+                    <p class="u-text u-text-3 ">{{showdetail.SDDescriptions_2}}</p>
+                </div>
+                <div class="col">
+                    {% if showdetail.SDImg_4 %}
+                    <img class="venobox play-btn " href="{{showdetail.SDImg_4.url}}" src="/media/{{showdetail.SDImg_4}}"
+                         width="100%">
+                    {% else %}
+                    <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    {% endif %}
+    {% endfor %}
+</div>
+
+{% endblock body %}

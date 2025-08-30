@@ -1,0 +1,49 @@
+<section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="owl-carousel testimonials-carousel">
+
+          {% for owner in owner_make %}
+             {% if LANGUAGE_CODE == 'ar' %}
+                <div class="row testimonial-item" style="[dir=rtl]">
+                    <div class="col">
+                         <img src="/media/{{owner.image}}" class="w-100 shadow rounded" alt="">
+                     </div>
+              <div class="col text-right">
+                    <h3>{{owner.OwTitle_ar}}</h3>
+                    <h4>{{owner.OwExperience_ar}}</h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                       {{owner.OwDesc_ar}}
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                </div>
+              </div>
+
+                {% else %}
+
+
+                <div class="row testimonial-item">
+                    <div class="col">
+                    <img src="/media/{{owner.image}}" class="w-100 shadow rounded" alt="">
+                      </div>
+                    <div class="col text-left">
+                    <h3>{{owner.OwTitle}}</h3>
+                    <h4>{{owner.OwExperience}}</h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                       {{owner.OwDesc}}
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                    </div>
+              </div>
+
+
+
+                {% endif %}
+          {% endfor %}
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->

@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+    project:
+      build: .
+      restart: always
+      volumes:
+        - ./:/usr/src/app
+      ports:
+        - 80:80
+      expose:
+        - 80
+      command: "gunicorn --chdir /usr/src/app --access-logfile - --error-logfile - --bind 80:80 project.wsgi:application"

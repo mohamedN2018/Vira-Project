@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+{% for interior_designdetail in Interior_Design_Detail %}
+{% if LANGUAGE_CODE == 'ar' %}
+<link href="{% static 'assets/css/detail.css' %}" rel="stylesheet">
+{% if interior_designdetail.IDDImg_1 %}
+<img class="u-section-5 venobox play-btn img-wid" href="{{interior_designdetail.IDDImg_1.url}}"
+     src="{{interior_designdetail.IDDImg_1.url}}" alt="">
+{% else %}
+<img class="u-section-5" src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%"
+     height="800px" alt="">
+{% endif %}
+<div class="container text-center">
+    <div class="row align-items u-style-x">
+        <h3>{{interior_designdetail.IDDDescriptions_ar}}</h3>
+    </div>
+</div>
+<div class="container">
+    <section>
+        <div class="container-fluid-ms">
+            <div class="row">
+                <div class="col">
+                    {% if interior_designdetail.IDDImg_2 %}
+                    <img class="venobox play-btn " href="{{interior_designdetail.IDDImg_2.url}}"
+                         src="{{interior_designdetail.IDDImg_2.url}}" width="100%">
+                    {% else %}
+                    <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%">
+                    {% endif %}
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <h2 class="u-text u-text-2 text-center">{{interior_designdetail.IDDTitle_1_ar}}</h2>
+                        <p class="u-text u-text-3 text-center">{{interior_designdetail.IDDDescriptions_1_ar}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid-ms">
+            <div class="row">
+                <div class="col">
+                    {% if interior_designdetail.IDDImg_3 %}
+                    <img class="venobox play-btn img-wid" href="{{interior_designdetail.IDDImg_3.url}}"
+                         src="{{interior_designdetail.IDDImg_3.url}}">
+                    {% else %}
+                    <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid-ms">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="u-text u-text-2">{{interior_designdetail.IDDTitle_2_ar}}</h2>
+                <p class="u-text u-text-3 ">{{interior_designdetail.IDDDescriptions_2_ar}}</p>
+            </div>
+            <div class="col">
+                {% if interior_designdetail.IDDImg_4 %}
+                <img class="venobox play-btn " href="{{interior_designdetail.IDDImg_4.url}}"
+                     src="{{interior_designdetail.IDDImg_4.url}}" width="100%">
+                {% else %}
+                <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%">
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    </section>
+    <hr>
+</div>
+
+{% else %}
+<link href="{% static 'assets/css/detail.css' %}" rel="stylesheet">
+{% if interior_designdetail.IDDImg_1 %}
+<img class="u-section-5 venobox play-btn img-wid" href="{{interior_designdetail.IDDImg_1.url}}"
+     src="{{interior_designdetail.IDDImg_1.url}}" alt="">
+{% else %}
+<img class="u-section-5" src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%"
+     height="800px" alt="">
+{% endif %}
+<div class="container text-center">
+    <div class="row align-items u-style-x">
+        <h3>{{interior_designdetail.IDDDescriptions}}</h3>
+    </div>
+</div>
+<div class="container">
+    <section>
+        <div class="container-fluid-ms">
+            <div class="row">
+                <div class="col text-center">
+                    {% if interior_designdetail.IDDImg_2 %}
+                    <img class="venobox play-btn " href="{{interior_designdetail.IDDImg_2.url}}"
+                         src="{{interior_designdetail.IDDImg_2.url}}" width="100%">
+                    {% else %}
+                    <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%">
+                    {% endif %}
+                </div>
+                <div class="col">
+                        <h2 class="u-text u-text-2">{{interior_designdetail.IDDTitle_1}}</h2>
+                        <p class="u-text u-text-3 ">{{interior_designdetail.IDDDescriptions_1}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid-ms">
+            <div class="row">
+                <div class="col">
+                    {% if interior_designdetail.IDDImg_3 %}
+                    <img class="venobox play-btn img-wid" href="{{interior_designdetail.IDDImg_3.url}}"
+                         src="{{interior_designdetail.IDDImg_3.url}}">
+                    {% else %}
+                    <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid-ms">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="u-text u-text-2">{{interior_designdetail.IDDTitle_2}}</h2>
+                    <p class="u-text u-text-3 ">{{interior_designdetail.IDDDescriptions_2}}</p>
+                </div>
+                <div class="col">
+                    {% if interior_designdetail.IDDImg_4 %}
+                    <img class="venobox play-btn " href="{{interior_designdetail.IDDImg_4.url}}"
+                         src="{{interior_designdetail.IDDImg_4.url}}" width="100%">
+                    {% else %}
+                    <img src="{% static 'assets/img/IF_img/1200px-No-Image-Placeholder.png' %}" width="100%">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    {% endif %}
+    {% endfor %}
+</div>
+{% endblock body %}
