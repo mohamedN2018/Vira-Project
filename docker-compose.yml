@@ -1,12 +1,15 @@
 version: '3.7'
 services:
-    project:
-      build: .
-      restart: always
-      volumes:
-        - ./:/usr/src/app
-      ports:
-        - 8080:8000
-      expose:
-        - 8080
-      command: "gunicorn --chdir /usr/src/app --access-logfile - --error-logfile - --bind 8080:8080 project.wsgi:application"
+  project:
+    build: .
+    restart: always
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - "8080:8000"  # 8080 على جهازك، 8000 داخل الـ container
+    command: >
+      gunicorn --chdir /usr/src/app
+               --access-logfile -
+               --error-logfile -
+               --bind 0.0.0.0:8000
+               project.wsgi:application
