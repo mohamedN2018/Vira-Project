@@ -17,10 +17,11 @@ sqlparse = "==0.5.3"
 tzdata = "==2025.2"
 virtualenv = "==20.34.0"
 django = "*"
-pipreqs = "*"
 django-jazzmin = "*"
 pillow = "*"
 python-decouple = "*"
+pipreqs = "*"
+gunicorn = "*"
 
 [dev-packages]
 
