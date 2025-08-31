@@ -36,8 +36,7 @@ def masters(request):
 
 
 def portfolio_detail(request, LSlug):
-    portfolio_detail = PortfolioLists.objects.get(LSlug=LSlug)
-
+    portfolio_detail = PortfolioLists.objects.filter(LSlug=LSlug).first()
     # imports
     myinfo = Info.objects.first()
     nav_header = NavHeader.objects.all()
