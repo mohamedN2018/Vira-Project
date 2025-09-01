@@ -18,9 +18,8 @@ ALLOWED_HOSTS = ["*"]
 CORS_ORIGIN_WHITELIST = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
-    f"{MAIN_DOMAIN}"
-    # f"http://{MAIN_DOMAIN}",
-    # f"https://{MAIN_DOMAIN}",
+    f"http://{MAIN_DOMAIN}",
+    f"https://{MAIN_DOMAIN}",
 ]
 # CSRF_COOKIE_DOMAIN = MAIN_DOMAIN
 # =========================
