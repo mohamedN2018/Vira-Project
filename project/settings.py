@@ -9,7 +9,7 @@ from django.utils.translation import gettext_lazy as _
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('MY_SECRET_KEY')
-DEBUG = config('DEBUG', default=True, cast=bool)
+DEBUG = True
 
 MAIN_DOMAIN = config('MAIN_DOMAIN', default='localhost')
 
@@ -18,8 +18,7 @@ ALLOWED_HOSTS = ["*"]
 CORS_ORIGIN_WHITELIST = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
-    f"http://{MAIN_DOMAIN}",
-    f"https://{MAIN_DOMAIN}",
+    f"{MAIN_DOMAIN}",
 ]
 # CSRF_COOKIE_DOMAIN = MAIN_DOMAIN
 # =========================
